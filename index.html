@@ -3,100 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/style.css" >
-    <title>Programming Quiz</title>
-</head>
-
-<body>
-    <header>
-        <h1>
-            <a href="highscores.html" class="" style="text-decoration: none;">
-                Highscores
-            </a>
-        </h1>
-        <div>
-            <h1 id="timer">Time: 70</h4>
-        </div>
-    </header>
-    <div>
-       <section id="startQuiz">
-
-            <div>
-                <br>
-                <div>
-                    <h1>Coding Quiz Challenge</h1>
-                    <h4 id="qTitle" class="text-justify p-3 m-3">Try to answer the following code-related questions within the time limit. Keep in mind that
-                        incorrect answers will penalize your score/time by fifteen seconds!
-                    </h4>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <button type="button" class="btn btn-primary rounded-pill" id="startBtn">Start Quiz</button>
-                </div>
-            </div>
-        </section>
-        
-        <section id="takeQuiz" class= "d-none"> 
-            <div>
-                <div>
-                    <h2 id="Question"></h2>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <button type="button" class="btn btn-primary btn-block text-left" id="btnA1"></button>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <button type="button" class="btn btn-primary btn-block text-left" id="btnA2"></button>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <button type="button" class="btn btn-primary btn-block text-left" id="btnA3"></button>
-                </div>
-            </div>
-
-            <div>
-                <div>
-                    <button type="button" class="btn btn-primary btn-block text-left" id="btnA4"></button>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <h3 id="result"></h3>
-                    
-                </div>
-            </div>
-        </section>
-        <section id="finalScore" class= "d-none">
-            <div>
-                
-                <div>
-                    <h2 id="msgQuizDone"></h2>
-                    <h6 id="msgScore"></h6>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <label for="YourInitials">Enter initials:</label>
-                    <input type="text" name="YourInitials" id="xInitials">
-                    <button type="submit" class="btn btn-primary btn-sm" id="submitBtn">Submit</button>
-                </div>
-            </div>
-        </section>
-
-
-    </div>
-
-    <!-- Link our custom JavaScript -->
+    <title>Web Development Quiz</title>
+    <link href="./assets/style.css" rel="stylesheet">
     <script src="assets/js/script.js"></script>
-    <script src="assets/js/questions.js"></script>
+</head>
+<body>
+    <div id="nav">
+        <div class="left">
+            <a onclick="getScore()" href="#"><h4 >View Highscore</h4></a>
+        </div>
+        <div class="right">
+            <h4>Time: <span id="timeLeft">0</span></h4>
+        </div>
+    </div>
+   
+    <div id="quiz">
+        <div id="quizBody">      
+            <h1>   
+                JavaScript Quiz!
+            </h1>
+            <h3>
+                Click to play!   
+            </h3>
+            <button onclick="start()">Start!</button>
+        </div>
+    </div>
 </body>
-
 </html>
