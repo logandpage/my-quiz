@@ -176,5 +176,3 @@ for (var buttonLoop = 0; buttonLoop < questions[currentQuestion].choices.length;
 
 document.getElementById("quizBody").innerHTML = quizContent;
 }
-
-
